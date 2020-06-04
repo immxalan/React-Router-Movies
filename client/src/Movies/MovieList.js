@@ -7,7 +7,7 @@ const MovieList = props => {
   useEffect(() => {
     const getMovies = () => {
       axios
-        .get('http://localhost:5000/api/movies')
+        .get('http://localhost:5100/api/movies')
         .then(response => {
           setMovies(response.data);
         })
